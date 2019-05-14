@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.CardView">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="Name" Text="{Binding Name}"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="Type" Text="{Binding Type_Line}" IsVisible="False"/>
+                <Label x:Name="CMC" Text="{Binding CMC}" IsVisible="False"/>
+                <Label x:Name="Set" Text="{Binding Set_Name}" IsVisible="False"/>
+                <Entry x:Name="DeckName" Placeholder="Deck Name"/>
+                <Image x:Name="CardImage" Source="{Binding Image_URIs.Normal}"/>
+                <Label x:Name="Purchase" Text="{Binding Purchase_URIs.Tcgplayer}" IsVisible="False"/>
+                <Button Text="Add to Deck" Clicked="OnAddToDeckClicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

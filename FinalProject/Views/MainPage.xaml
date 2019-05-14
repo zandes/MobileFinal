@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.MainPage"
+             Title="MTG Deck Builder">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Decks" Priority="0" Order="Secondary" Clicked="OnDecksClicked"/>
+        <ToolbarItem Text="Search" Priority="1" Order="Secondary" Clicked="OnSearchClicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Magic The Gathering"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Deck Building Utility"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
